@@ -110,3 +110,78 @@ print(a+b+c)
 print(a + ' ' + b + ' ' + c)
 
 print(5+3)
+
+
+"""GLOBAL VARIABLES
+global variables are created outside of a function, can be used by everyone both inside & outside of function."""
+#Sample_01: create a global variable and use it inside the function
+
+print()
+print()
+print()
+x = 'awesome'
+def function():
+    print('Python is '+x)
+function()
+
+"""" biến trong và ngoài trùng nhau: trong function sử dụng giá trị biến trong, ngoài function sử dụng giá trị biến ngoài """
+print()
+print()
+print()
+x = 'awesome'
+
+def funct():
+    x = 'fantastic'
+    print('Python is '+ x)   #trong function sử dụng biến trong, hiển thị : Python is fantastic
+funct()
+
+print('Python is '+x)   # ngoài function sử dụng biến ngoài, hiển thị: Python is awesome
+
+
+"""GLOBAL keyword: để đưa 1 biến từ local thành biến global"""
+#biến tạo trong function là biến local, chỉ sử dụng được trong function, tuy nhiên có thể đưa biến này thành GLOBAL bằng keyword global như ví dụ sau
+print()
+print()
+print()
+def funct():
+    global h
+    h = 'fantastic'
+    print('Iris is '+h)   # gọi biến local
+funct()
+print('Python is '+h)    # gọi biến global sau khi chuyển biến local thành global, nếu ko thì sẽ bị lỗi
+
+
+"""GLOBAL keyword: chuyển 1 local biến thành 1 global biến để thay thế global biến cùng tên x đã khai báo trước đó"""
+print()
+print()
+print()
+x = 'I love '
+
+def funct():
+    global x
+    x = 'My name is '
+
+funct()
+
+print(x + 'Iris')
+
+
+#####################PYTHON DATA TYPE##########################
+print()
+print()
+print()
+x = 'Iris'  #type:string
+print(x)
+print(type(x))
+y = 3       #type:int
+print(y)
+print(type(y))
+z = 3.14   #type:float
+print(z)
+print(type(z))
+m = 1j     #type: complex
+print(m)
+print(type(m))
+n = ['Nhím', 'Voi', 'Gấu']    #type:list
+print(n)
+print(type(n))
