@@ -1,6 +1,7 @@
 print('Hello, World.!')
 
 ##############Python Variables#################
+
 """Lesson: in python, variables are created when you assign a value to it"""
 print()
 print()
@@ -74,3 +75,38 @@ print(z)
 print(type(x))
 print(type(y))
 print(type(z))
+
+"""UNPACK COLLECTION: if you have list, tuple then python allows you to extract the values into variables"""
+print()
+print()
+print()
+list = ['táo', 'nho', 'cam', 'bưởi', 'đào']
+x, y, z, m, n = list
+print(x)
+print(type(x))
+print(y)
+print(z)
+print(m)
+print(n)
+print(list)
+print(type(list))
+
+
+"""output variables: PRINT() function
++ PRINT(x): in giá trị 1 biến
++ PRINT(x, y, z): in giá trị nhiều biến cùng 1 lúc
++ PRINT(x+y+z): in kết quả của phép tính"""
+print()
+print()
+print()
+x = 'Python is awesome'
+print(x)
+
+a = 'Python'
+b = 'is'
+c = 'awesome'
+print(a,b,c)
+print(a+b+c)
+print(a + ' ' + b + ' ' + c)
+
+print(5+3)
