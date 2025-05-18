@@ -243,4 +243,143 @@ print(random.randrange(1,20))
 
 
 #####################PYTHON STRING####################
+"""strings are also arrays"""
+print()
+print()
+print()
+a = 'Hello Iris, I love you'
+print(a)
+print(a[0])
+
+"""looping through a string"""
+print()
+print()
+print()
+b = 'banana'
+for x in b:
+    print(x)
+print(b)
+
+"""string length"""
+print()
+print()
+print()
+a = 'Hello Iris, I love you so much'
+print(a)
+print(len(a))
+
+"""IN keyword: to check if a certain phrase or character is present in a string"""
+#sample: check if 'free' is present IN the following text:
+print()
+print()
+print()
+text = 'The best things in life are free!'
+print('free' in text)
+print('Iris' in text)
+
+#the sample above with IF statement:
+print()
+print()
+print()
+text = 'The best things in life are free!'
+x = 'Iris'
+if x in text:
+    print('Yes! ' + x + ' is in the text')
+else:
+    print('No! ' + x + ' is not in the text')
+
+"""NOT IN keyword: check if phrase or character is not present in a string"""""
+print()
+print()
+print()
+text = 'The best things in life are free!'
+print('Iris' not in text)
+
+#use IF in above sample:
+print()
+print()
+print()
+text = 'The best things in life are free!'
+x = 'expensive'
+if x not in text:
+    print(x + ' is not in string')
+else:
+    print(x + ' is in the string')
+
+"""Slicing strings: để cắt ký tự, đoạn text ra khỏi string"""
+#sample: cắt ký tự thứ 6-9 (tương đương chữ Nhím) trong đoạn text sau
+print()
+print()
+print()
+text = 'Hello Nhím, I love you so much'
+print(len(text))
+print(text[6:10])
+print(text[:10])
+print(text[2:])
+print(text[-5:-2])  #use nagative indexing
+
+"""BIẾN ĐÔI STRING"""
+#chuyển viết thường sang viết hoa
+print()
+print()
+print()
+text = 'xin chào việt nam'
+print(text)
+print(text.upper())
+
+#chuyển viết hoa sang viết thường
+print()
+print()
+print()
+text = 'TÔI LÀ NGƯỜI VIỆT NAM'
+print(text)
+print(text.lower())
+
+#xóa ký tự trống (space) thừa ở đầu và cuối string
+print()
+print()
+print()
+text = '           Hà Nội mùa này vắng những cơn mưa     '
+print(text)
+print(text.strip())
+
+#Replace string: thay đổi ký tự/một phần trong string
+print()
+print()
+print()
+text = 'Hello Việt Nam'
+print(text)
+print(text.replace("Hello", "Xin chào"))
+
+#Split string: cắt string thành danh sách list dựa vào ký tự đặt ra
+print()
+print()
+print()
+text = 'Hello, My name is Iris. I am learning Python'
+print(text)
+print(text.split(" "))  #cắt text thành các từ đơn bằng dấu space
+print(text.split("."))  #cắt text thành các từ đơn bằng dấu .
+
+#String concatenation: ghép string bằng dấu +
+print()
+print()
+print()
+text_1 = 'Hello'
+text_2 = 'My name is IRIS'
+text_3 = 'I love you'
+print(text_1 + " " + text_2 + " " + text_3)
+
+"""F-string: to specify a string as an f-string, simply put an f in front of the string literal,
+and add curly brackets {} as placeholders for variables and other operations"""
+print()
+print()
+print()
+age = 33
+text = f'My name is Iris, I am {age}'
+print(text)
+
+
+
+
+
 
