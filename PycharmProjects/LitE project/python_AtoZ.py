@@ -426,9 +426,7 @@ print(text.capitalize())
 text = 'MY NAME IS IRIS'
 print(text.casefold())
 
-#count(): đếm số lần xuất hiện của một ký tự nào đó
-text = 'hàm đếm số lần xuất hiện của ký tự trong chuỗi'
-print(text.count())
+
 
 
 
