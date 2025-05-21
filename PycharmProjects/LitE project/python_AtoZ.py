@@ -369,8 +369,7 @@ text_2 = 'My name is IRIS'
 text_3 = 'I love you'
 print(text_1 + " " + text_2 + " " + text_3)
 
-"""F-string: to specify a string as an f-string, simply put an f in front of the string literal,
-and add curly brackets {} as placeholders for variables and other operations"""
+"""F-string: có thể kết hợp string và số bằng f-string"""
 print()
 print()
 print()
@@ -378,7 +377,58 @@ age = 33
 text = f'My name is Iris, I am {age}'
 print(text)
 
+"""F-string: placeholder có format kiểu dữ liệu: kết hợp string + số (trong đó có định dạng số """
+print()
+print()
+print()
+price = 150
+text = f'The price is {price} dollars'   #ko định dạng cho số
+print(text)
 
+text_01 = f'The price is {price:.2f} dollars'  #định dạng price là số thập phân có 2 số sau dấu .
+print(text_01)
+
+"""F-string: placeholder là kết quả 1 phép toán"""
+print()
+print()
+print()
+text = f'Tổng của 3 & 4 là {3+4}'
+print(text)
+x = 12
+y = 5
+text_00 = f'Hiệu của x và y là {x-y}'
+print('Số x là: ', x)
+print('Số y là: ' , y)
+print(text_00)
+
+
+"""Cách thêm các ký tự không hợp lệ vào trong string: 
+trong Python có một vài ký tự ko hợp lệ nếu thêm vào string, nhưng bằng cách chèn \ trước ký tự ko hợp lệ thì có thể thêm ký tự đó vào string một cách bình thường"""
+print()
+print()
+print()
+
+# chèn kí tự '
+print('My name is Iris, I\'m 33 years old')
+
+#chèn kí tự \
+print('Đây là cách chèn ký tự \\ vào trong text')
+
+"""CÁC HÀM CHUYỂN ĐỔI STRING"""
+#capitalize() : viết hoa ký tự đầu tiên
+print()
+print()
+print()
+text = 'tên tôi là iris'
+print(text.capitalize())
+
+#casefold() : chuyển string sang viết thường
+text = 'MY NAME IS IRIS'
+print(text.casefold())
+
+#count(): đếm số lần xuất hiện của một ký tự nào đó
+text = 'hàm đếm số lần xuất hiện của ký tự trong chuỗi'
+print(text.count())
 
 
 
